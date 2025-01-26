@@ -48,7 +48,7 @@ pipeline {
                 // Old with run with images
                 
                 // No from docker compose.yml
-                sh "docker compose up -d"
+                sh "docker compose down && docker compose up -d"
             }
         }
         
